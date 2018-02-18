@@ -1,7 +1,7 @@
 pragma solidity ^0.4.18;
 
 
-import './ERC20.sol';
+import 'zeppelin-solidity/contracts/token/ERC20/ERC20.sol';
 import "./SlotManager.sol";
 
 contract DecentralizedOrderBook{
@@ -55,7 +55,7 @@ contract DecentralizedOrderBook{
     function handleInsideSpreadOrder(uint _quantity, uint _price, bool _direction, address proposer){
         address slotManagerAddress = slotsMap[_price];
         if (slotManagerAddress==address(0)){
-            slotManagerAddress = new SlotManager(this,token,_price);
+            slotManagerAddress = new SlotManager(this,_price);
             slotsMap[_price] = slotManagerAddress;
         }
         // the slot manager for this price is found

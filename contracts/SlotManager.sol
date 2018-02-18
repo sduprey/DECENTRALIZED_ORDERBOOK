@@ -1,6 +1,5 @@
 pragma solidity ^0.4.18;
 
-import './ERC20.sol';
 import "./DecentralizedOrderBook.sol";
 
 contract SlotManager{
@@ -21,12 +20,10 @@ contract SlotManager{
     Trade[] orderBook;
     mapping (bytes32 => uint) private indexesMap;
     uint slotNumberOrder;
-    ERC20 token;
     DecentralizedOrderBook parent;
 
-    function SlotManager(address _parent, address _token, uint _slotPrice){
+    function SlotManager(address _parent,uint _slotPrice){
         parent = DecentralizedOrderBook(_parent);
-        token = ERC20(_token);
         slotPrice = _slotPrice;
     }
 
