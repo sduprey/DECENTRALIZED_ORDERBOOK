@@ -1,21 +1,20 @@
 pragma solidity ^0.4.18;
 
-
-import 'zeppelin-solidity/contracts/token/ERC20/ERC20.sol';
 import "./SlotManager.sol";
+import "./TradingToken.sol";
 
 contract DecentralizedOrderBook{
 
     mapping (uint => address) private slotsMap;
-    ERC20 token;
+    TradingToken token;
     mapping (address => uint) private cashBalance;
     mapping (address => uint) private withdrawAllowance;
 
     uint bestBid;
     uint bestAsk;
 
-    function DecentralizedOrderBook(ERC20 _token){
-        token = _token;
+    function DecentralizedOrderBook(address _token){
+        token = TradingToken(_token);
     }
 
     function settleCash(address _from, address _to, uint _quantity, uint _price){
