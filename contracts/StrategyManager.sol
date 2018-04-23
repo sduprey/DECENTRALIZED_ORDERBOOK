@@ -22,8 +22,6 @@ contract StrategyManager{
     }
 
     function registerNewStrategy(string _newAddress, bytes15 _stratName) onlyOwner {
-      //StrategyPublisher newStrat = StrategyPublisher(newStrategy);
-      //stratRegistry[_stratName] = newStrat;
       stratRegistry[_stratName] = _newAddress;
       strategies.push(_stratName);
       newRegister(_stratName, _newAddress);
@@ -31,6 +29,11 @@ contract StrategyManager{
 
     function getAllRegisteredStrategies() public constant returns (bytes15[]) {
       return(strategies);
+    }
+
+    function getStrategyAddress(bytes15 _stratName) public constant returns (string){
+      string myAddress = stratRegistry[_stratName];
+      return  myAddress;
     }
 
 }

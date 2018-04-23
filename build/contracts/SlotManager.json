@@ -987,7 +987,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1489,
+                              "referencedDeclaration": 1505,
                               "type": "function () pure returns (bytes32)",
                               "value": "keccak256"
                             },
@@ -3897,7 +3897,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1489,
+                              "referencedDeclaration": 1505,
                               "type": "function () pure returns (bytes32)",
                               "value": "keccak256"
                             },
@@ -5095,5 +5095,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-04-23T09:28:46.595Z"
+  "updatedAt": "2018-04-23T10:18:17.082Z"
 }
