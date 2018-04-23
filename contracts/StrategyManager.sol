@@ -20,10 +20,10 @@ contract StrategyManager{
       name = _managerName;
     }
 
-    function registerNewStrategy(address _newAddress, string _stratName) onlyOwner {
-      stratRegistry[_newAddress] = _stratName;
-      strategies.push(_stratName);
-      newRegister(_stratName, _newAddress);
+    function registerStrategy(address _newAddress, string _stratName) onlyOwner {
+      //stratRegistry[_newAddress] = _stratName;
+      //strategies.push(_stratName);
+      //newRegister(_stratName, _newAddress);
     }
 
     function getNumberRegisteredStrategies() public constant returns (uint) {
