@@ -8,7 +8,7 @@
       "outputs": [
         {
           "name": "",
-          "type": "bytes15"
+          "type": "bytes10"
         }
       ],
       "payable": false,
@@ -30,29 +30,10 @@
       "type": "function"
     },
     {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "",
-          "type": "bytes15"
-        }
-      ],
-      "name": "stratRegistry",
-      "outputs": [
-        {
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
           "name": "_managerName",
-          "type": "bytes15"
+          "type": "bytes10"
         }
       ],
       "payable": false,
@@ -65,12 +46,12 @@
         {
           "indexed": false,
           "name": "name",
-          "type": "bytes15"
+          "type": "bytes10"
         },
         {
           "indexed": false,
           "name": "stratAddress",
-          "type": "string"
+          "type": "address"
         }
       ],
       "name": "newRegister",
@@ -81,11 +62,11 @@
       "inputs": [
         {
           "name": "_newAddress",
-          "type": "string"
+          "type": "address"
         },
         {
           "name": "_stratName",
-          "type": "bytes15"
+          "type": "bytes10"
         }
       ],
       "name": "registerNewStrategy",
@@ -97,30 +78,11 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "getAllRegisteredStrategies",
+      "name": "getNumberRegisteredStrategies",
       "outputs": [
         {
           "name": "",
-          "type": "bytes15[]"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "_stratName",
-          "type": "bytes15"
-        }
-      ],
-      "name": "getStrategyAddress",
-      "outputs": [
-        {
-          "name": "",
-          "type": "string"
+          "type": "uint256"
         }
       ],
       "payable": false,
@@ -128,18 +90,18 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6040516020806107188339810160405280805190602001909190505080600160006101000a8154816effffffffffffffffffffffffffffff02191690837101000000000000000000000000000000000090040217905550506106a2806100766000396000f300606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461007d57806323659bc4146100ce5780634ee11d3c146101385780638da5cb5b146101b2578063a1059df914610207578063a500ea01146102b7575b600080fd5b341561008857600080fd5b610090610367565b604051808270ffffffffffffffffffffffffffffffffff191670ffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b34156100d957600080fd5b6100e161038b565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610124578082015181840152602081019050610109565b505050509050019250505060405180910390f35b341561014357600080fd5b6101b0600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803570ffffffffffffffffffffffffffffffffff1916906020019091905050610431565b005b34156101bd57600080fd5b6101c5610490565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561021257600080fd5b61023c600480803570ffffffffffffffffffffffffffffffffff19169060200190919050506104b5565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561027c578082015181840152602081019050610261565b50505050905090810190601f1680156102a95780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34156102c257600080fd5b6102ec600480803570ffffffffffffffffffffffffffffffffff191690602001909190505061059e565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561032c578082015181840152602081019050610311565b50505050905090810190601f1680156103595780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b600160009054906101000a9004710100000000000000000000000000000000000281565b61039361064e565b600280548060200260200160405190810160405280929190818152602001828054801561042757602002820191906000526020600020906000905b82829054906101000a9004710100000000000000000000000000000000000270ffffffffffffffffffffffffffffffffff1916815260200190600f0190602082600e010492830192600103820291508084116103ce5790505b5050505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561048c57600080fd5b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6104bd610662565b6000600360008470ffffffffffffffffffffffffffffffffff191670ffffffffffffffffffffffffffffffffff191681526020019081526020016000209050808054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105915780601f1061056657610100808354040283529160200191610591565b820191906000526020600020905b81548152906001019060200180831161057457829003601f168201915b5050505050915050919050565b60036020528060005260406000206000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106465780601f1061061b57610100808354040283529160200191610646565b820191906000526020600020905b81548152906001019060200180831161062957829003601f168201915b505050505081565b602060405190810160405280600081525090565b6020604051908101604052806000815250905600a165627a7a72305820d61806f309d19e52af9dd910dfa9a6a57127458b3556213f9a888033b86c8e0f0029",
-  "deployedBytecode": "0x606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde031461007d57806323659bc4146100ce5780634ee11d3c146101385780638da5cb5b146101b2578063a1059df914610207578063a500ea01146102b7575b600080fd5b341561008857600080fd5b610090610367565b604051808270ffffffffffffffffffffffffffffffffff191670ffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b34156100d957600080fd5b6100e161038b565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610124578082015181840152602081019050610109565b505050509050019250505060405180910390f35b341561014357600080fd5b6101b0600480803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803570ffffffffffffffffffffffffffffffffff1916906020019091905050610431565b005b34156101bd57600080fd5b6101c5610490565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561021257600080fd5b61023c600480803570ffffffffffffffffffffffffffffffffff19169060200190919050506104b5565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561027c578082015181840152602081019050610261565b50505050905090810190601f1680156102a95780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34156102c257600080fd5b6102ec600480803570ffffffffffffffffffffffffffffffffff191690602001909190505061059e565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561032c578082015181840152602081019050610311565b50505050905090810190601f1680156103595780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b600160009054906101000a9004710100000000000000000000000000000000000281565b61039361064e565b600280548060200260200160405190810160405280929190818152602001828054801561042757602002820191906000526020600020906000905b82829054906101000a9004710100000000000000000000000000000000000270ffffffffffffffffffffffffffffffffff1916815260200190600f0190602082600e010492830192600103820291508084116103ce5790505b5050505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561048c57600080fd5b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6104bd610662565b6000600360008470ffffffffffffffffffffffffffffffffff191670ffffffffffffffffffffffffffffffffff191681526020019081526020016000209050808054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105915780601f1061056657610100808354040283529160200191610591565b820191906000526020600020905b81548152906001019060200180831161057457829003601f168201915b5050505050915050919050565b60036020528060005260406000206000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106465780601f1061061b57610100808354040283529160200191610646565b820191906000526020600020905b81548152906001019060200180831161062957829003601f168201915b505050505081565b602060405190810160405280600081525090565b6020604051908101604052806000815250905600a165627a7a72305820d61806f309d19e52af9dd910dfa9a6a57127458b3556213f9a888033b86c8e0f0029",
-  "sourceMap": "26:991:4:-;;;427:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;488:12;481:4;;:19;;;;;;;;;;;;;;;;;;;427:80;26:991;;;;;;",
-  "deployedSourceMap": "26:991:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;83:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;737:107;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;513:218:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;57:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;850:164;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;233:47:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;83:19:4;;;;;;;;;;;;;:::o;737:107::-;800:9;;:::i;:::-;826:10;819:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;737:107;:::o;513:218::-;397:5;;;;;;;;;;;385:17;;:10;:17;;;377:26;;;;;;;;513:218;;:::o;57:20::-;;;;;;;;;;;;;:::o;850:164::-;923:6;;:::i;:::-;938:16;957:13;:25;971:10;957:25;;;;;;;;;;;;;;;;;938:44;;998:9;990:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;850:164;;;;:::o;233:47::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;26:991::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.18;\n\ncontract StrategyManager{\n\n    address public owner;\n    bytes15 public name;      //the name of the strategy\n    bytes15[] strategies;\n\n    //mapping(bytes15 => StrategyPublisher) public stratRegistry;\n    mapping(bytes15 => string) public stratRegistry;\n\n    event newRegister(bytes15 name, string stratAddress);\n\n\n    modifier onlyOwner(){\n        require(msg.sender==owner);\n        _;\n    }\n\n    function StrategyManager(bytes15 _managerName){\n      name = _managerName;\n    }\n\n    function registerNewStrategy(string _newAddress, bytes15 _stratName) onlyOwner {\n      //stratRegistry[_stratName] = _newAddress;\n      //strategies.push(_stratName);\n      //newRegister(_stratName, _newAddress);\n    }\n\n    function getAllRegisteredStrategies() public constant returns (bytes15[]) {\n      return(strategies);\n    }\n\n    function getStrategyAddress(bytes15 _stratName) public constant returns (string){\n      string myAddress = stratRegistry[_stratName];\n      return  myAddress;\n    }\n\n}\n",
+  "bytecode": "0x6060604052341561000f57600080fd5b6040516020806102f78339810160405280805190602001909190505080600060146101000a81548169ffffffffffffffffffff02191690837601000000000000000000000000000000000000000000009004021790555050610281806100766000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde03146100675780630af30038146100c2578063492f6e4f1461011d5780638da5cb5b14610146575b600080fd5b341561007257600080fd5b61007a61019b565b604051808275ffffffffffffffffffffffffffffffffffffffffffff191675ffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b34156100cd57600080fd5b61011b600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803575ffffffffffffffffffffffffffffffffffffffffffff19169060200190919050506101c4565b005b341561012857600080fd5b610130610223565b6040518082815260200191505060405180910390f35b341561015157600080fd5b610159610230565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600060149054906101000a90047601000000000000000000000000000000000000000000000281565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561021f57600080fd5b5050565b6000600180549050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204e396c0f8cf4e50212b1125ec5ab8c2139cfd4615a71e46d3eab28b0d48944da0029",
+  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806306fdde03146100675780630af30038146100c2578063492f6e4f1461011d5780638da5cb5b14610146575b600080fd5b341561007257600080fd5b61007a61019b565b604051808275ffffffffffffffffffffffffffffffffffffffffffff191675ffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b34156100cd57600080fd5b61011b600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803575ffffffffffffffffffffffffffffffffffffffffffff19169060200190919050506101c4565b005b341561012857600080fd5b610130610223565b6040518082815260200191505060405180910390f35b341561015157600080fd5b610159610230565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600060149054906101000a90047601000000000000000000000000000000000000000000000281565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561021f57600080fd5b5050565b6000600180549050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058204e396c0f8cf4e50212b1125ec5ab8c2139cfd4615a71e46d3eab28b0d48944da0029",
+  "sourceMap": "26:1011:4:-;;;431:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;492:12;485:4;;:19;;;;;;;;;;;;;;;;;;;431:80;26:1011;;;;;;",
+  "deployedSourceMap": "26:1011:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;83:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;517:219;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;742:112;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;57:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;83:19;;;;;;;;;;;;;:::o;517:219::-;401:5;;;;;;;;;;;389:17;;:10;:17;;;381:26;;;;;;;;517:219;;:::o;742:112::-;808:4;829:10;:17;;;;822:25;;742:112;:::o;57:20::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\ncontract StrategyManager{\n\n    address public owner;\n    bytes10 public name;      //the name of the strategy\n    bytes10[] strategies;\n\n    //mapping(bytes15 => StrategyPublisher) public stratRegistry;\n    //mapping(bytes10 => address) public stratRegistry;\n\n    event newRegister(bytes10 name, address stratAddress);\n\n\n    modifier onlyOwner(){\n        require(msg.sender==owner);\n        _;\n    }\n\n    function StrategyManager(bytes10 _managerName){\n      name = _managerName;\n    }\n\n    function registerNewStrategy(address _newAddress, bytes10 _stratName) onlyOwner {\n      //stratRegistry[_stratName] = _newAddress;\n      //strategies.push(_stratName);\n      //newRegister(_stratName, _newAddress);\n    }\n\n    function getNumberRegisteredStrategies() public constant returns (uint) {\n      return(strategies.length);\n    }\n\n//    function getStrategyAddress(bytes10 _stratName) public constant returns (address){\n//      address myAddress = stratRegistry[_stratName];\n//      return(myAddress);\n//    }\n\n}\n",
   "sourcePath": "/home/sduprey/My_Truffle_Project/Decentralized_Orderbook/contracts/StrategyManager.sol",
   "ast": {
     "attributes": {
       "absolutePath": "/home/sduprey/My_Truffle_Project/Decentralized_Orderbook/contracts/StrategyManager.sol",
       "exportedSymbols": {
         "StrategyManager": [
-          972
+          952
         ]
       }
     },
@@ -169,17 +131,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            972
+            952
           ],
           "name": "StrategyManager",
-          "scope": 973
+          "scope": 953
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "owner",
-              "scope": 972,
+              "scope": 952,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -205,18 +167,18 @@
             "attributes": {
               "constant": false,
               "name": "name",
-              "scope": 972,
+              "scope": 952,
               "stateVariable": true,
               "storageLocation": "default",
-              "type": "bytes15",
+              "type": "bytes10",
               "value": null,
               "visibility": "public"
             },
             "children": [
               {
                 "attributes": {
-                  "name": "bytes15",
-                  "type": "bytes15"
+                  "name": "bytes10",
+                  "type": "bytes10"
                 },
                 "id": 900,
                 "name": "ElementaryTypeName",
@@ -231,10 +193,10 @@
             "attributes": {
               "constant": false,
               "name": "strategies",
-              "scope": 972,
+              "scope": 952,
               "stateVariable": true,
               "storageLocation": "default",
-              "type": "bytes15[] storage ref",
+              "type": "bytes10[] storage ref",
               "value": null,
               "visibility": "internal"
             },
@@ -242,13 +204,13 @@
               {
                 "attributes": {
                   "length": null,
-                  "type": "bytes15[] storage pointer"
+                  "type": "bytes10[] storage pointer"
                 },
                 "children": [
                   {
                     "attributes": {
-                      "name": "bytes15",
-                      "type": "bytes15"
+                      "name": "bytes10",
+                      "type": "bytes10"
                     },
                     "id": 902,
                     "name": "ElementaryTypeName",
@@ -266,51 +228,6 @@
           },
           {
             "attributes": {
-              "constant": false,
-              "name": "stratRegistry",
-              "scope": 972,
-              "stateVariable": true,
-              "storageLocation": "default",
-              "type": "mapping(bytes15 => string storage ref)",
-              "value": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "attributes": {
-                  "type": "mapping(bytes15 => string storage ref)"
-                },
-                "children": [
-                  {
-                    "attributes": {
-                      "name": "bytes15",
-                      "type": "bytes15"
-                    },
-                    "id": 905,
-                    "name": "ElementaryTypeName",
-                    "src": "241:7:4"
-                  },
-                  {
-                    "attributes": {
-                      "name": "string",
-                      "type": "string storage pointer"
-                    },
-                    "id": 906,
-                    "name": "ElementaryTypeName",
-                    "src": "252:6:4"
-                  }
-                ],
-                "id": 907,
-                "name": "Mapping",
-                "src": "233:26:4"
-              }
-            ],
-            "id": 908,
-            "name": "VariableDeclaration",
-            "src": "233:47:4"
-          },
-          {
-            "attributes": {
               "anonymous": false,
               "name": "newRegister"
             },
@@ -322,64 +239,64 @@
                       "constant": false,
                       "indexed": false,
                       "name": "name",
-                      "scope": 914,
+                      "scope": 910,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "bytes15",
+                      "type": "bytes10",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "bytes15",
-                          "type": "bytes15"
+                          "name": "bytes10",
+                          "type": "bytes10"
                         },
-                        "id": 909,
+                        "id": 905,
                         "name": "ElementaryTypeName",
-                        "src": "305:7:4"
+                        "src": "308:7:4"
                       }
                     ],
-                    "id": 910,
+                    "id": 906,
                     "name": "VariableDeclaration",
-                    "src": "305:12:4"
+                    "src": "308:12:4"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "indexed": false,
                       "name": "stratAddress",
-                      "scope": 914,
+                      "scope": 910,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "string memory",
+                      "type": "address",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "string",
-                          "type": "string storage pointer"
+                          "name": "address",
+                          "type": "address"
                         },
-                        "id": 911,
+                        "id": 907,
                         "name": "ElementaryTypeName",
-                        "src": "319:6:4"
+                        "src": "322:7:4"
                       }
                     ],
-                    "id": 912,
+                    "id": 908,
                     "name": "VariableDeclaration",
-                    "src": "319:19:4"
+                    "src": "322:20:4"
                   }
                 ],
-                "id": 913,
+                "id": 909,
                 "name": "ParameterList",
-                "src": "304:35:4"
+                "src": "307:36:4"
               }
             ],
-            "id": 914,
+            "id": 910,
             "name": "EventDefinition",
-            "src": "287:53:4"
+            "src": "290:54:4"
           },
           {
             "attributes": {
@@ -394,9 +311,9 @@
                   ]
                 },
                 "children": [],
-                "id": 915,
+                "id": 911,
                 "name": "ParameterList",
-                "src": "365:2:4"
+                "src": "369:2:4"
               },
               {
                 "children": [
@@ -428,13 +345,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1535,
+                              "referencedDeclaration": 1515,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 916,
+                            "id": 912,
                             "name": "Identifier",
-                            "src": "377:7:4"
+                            "src": "381:7:4"
                           },
                           {
                             "attributes": {
@@ -469,18 +386,18 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1532,
+                                      "referencedDeclaration": 1512,
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 917,
+                                    "id": 913,
                                     "name": "Identifier",
-                                    "src": "385:3:4"
+                                    "src": "389:3:4"
                                   }
                                 ],
-                                "id": 918,
+                                "id": 914,
                                 "name": "MemberAccess",
-                                "src": "385:10:4"
+                                "src": "389:10:4"
                               },
                               {
                                 "attributes": {
@@ -492,39 +409,39 @@
                                   "type": "address",
                                   "value": "owner"
                                 },
-                                "id": 919,
+                                "id": 915,
                                 "name": "Identifier",
-                                "src": "397:5:4"
+                                "src": "401:5:4"
                               }
                             ],
-                            "id": 920,
+                            "id": 916,
                             "name": "BinaryOperation",
-                            "src": "385:17:4"
+                            "src": "389:17:4"
                           }
                         ],
-                        "id": 921,
+                        "id": 917,
                         "name": "FunctionCall",
-                        "src": "377:26:4"
+                        "src": "381:26:4"
                       }
                     ],
-                    "id": 922,
+                    "id": 918,
                     "name": "ExpressionStatement",
-                    "src": "377:26:4"
+                    "src": "381:26:4"
                   },
                   {
-                    "id": 923,
+                    "id": 919,
                     "name": "PlaceholderStatement",
-                    "src": "413:1:4"
+                    "src": "417:1:4"
                   }
                 ],
-                "id": 924,
+                "id": 920,
                 "name": "Block",
-                "src": "367:54:4"
+                "src": "371:54:4"
               }
             ],
-            "id": 925,
+            "id": 921,
             "name": "ModifierDefinition",
-            "src": "347:74:4"
+            "src": "351:74:4"
           },
           {
             "attributes": {
@@ -536,7 +453,7 @@
               ],
               "name": "StrategyManager",
               "payable": false,
-              "scope": 972,
+              "scope": 952,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -548,32 +465,32 @@
                     "attributes": {
                       "constant": false,
                       "name": "_managerName",
-                      "scope": 935,
+                      "scope": 931,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "bytes15",
+                      "type": "bytes10",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "bytes15",
-                          "type": "bytes15"
+                          "name": "bytes10",
+                          "type": "bytes10"
                         },
-                        "id": 926,
+                        "id": 922,
                         "name": "ElementaryTypeName",
-                        "src": "452:7:4"
+                        "src": "456:7:4"
                       }
                     ],
-                    "id": 927,
+                    "id": 923,
                     "name": "VariableDeclaration",
-                    "src": "452:20:4"
+                    "src": "456:20:4"
                   }
                 ],
-                "id": 928,
+                "id": 924,
                 "name": "ParameterList",
-                "src": "451:22:4"
+                "src": "455:22:4"
               },
               {
                 "attributes": {
@@ -582,9 +499,9 @@
                   ]
                 },
                 "children": [],
-                "id": 929,
+                "id": 925,
                 "name": "ParameterList",
-                "src": "473:0:4"
+                "src": "477:0:4"
               },
               {
                 "children": [
@@ -598,7 +515,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "operator": "=",
-                          "type": "bytes15"
+                          "type": "bytes10"
                         },
                         "children": [
                           {
@@ -608,12 +525,12 @@
                                 null
                               ],
                               "referencedDeclaration": 901,
-                              "type": "bytes15",
+                              "type": "bytes10",
                               "value": "name"
                             },
-                            "id": 930,
+                            "id": 926,
                             "name": "Identifier",
-                            "src": "481:4:4"
+                            "src": "485:4:4"
                           },
                           {
                             "attributes": {
@@ -621,33 +538,33 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 927,
-                              "type": "bytes15",
+                              "referencedDeclaration": 923,
+                              "type": "bytes10",
                               "value": "_managerName"
                             },
-                            "id": 931,
+                            "id": 927,
                             "name": "Identifier",
-                            "src": "488:12:4"
+                            "src": "492:12:4"
                           }
                         ],
-                        "id": 932,
+                        "id": 928,
                         "name": "Assignment",
-                        "src": "481:19:4"
+                        "src": "485:19:4"
                       }
                     ],
-                    "id": 933,
+                    "id": 929,
                     "name": "ExpressionStatement",
-                    "src": "481:19:4"
+                    "src": "485:19:4"
                   }
                 ],
-                "id": 934,
+                "id": 930,
                 "name": "Block",
-                "src": "473:34:4"
+                "src": "477:34:4"
               }
             ],
-            "id": 935,
+            "id": 931,
             "name": "FunctionDefinition",
-            "src": "427:80:4"
+            "src": "431:80:4"
           },
           {
             "attributes": {
@@ -656,7 +573,7 @@
               "isConstructor": false,
               "name": "registerNewStrategy",
               "payable": false,
-              "scope": 972,
+              "scope": 952,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -668,58 +585,58 @@
                     "attributes": {
                       "constant": false,
                       "name": "_newAddress",
-                      "scope": 945,
+                      "scope": 941,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "string memory",
+                      "type": "address",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "string",
-                          "type": "string storage pointer"
+                          "name": "address",
+                          "type": "address"
                         },
-                        "id": 936,
+                        "id": 932,
                         "name": "ElementaryTypeName",
-                        "src": "542:6:4"
+                        "src": "546:7:4"
                       }
                     ],
-                    "id": 937,
+                    "id": 933,
                     "name": "VariableDeclaration",
-                    "src": "542:18:4"
+                    "src": "546:19:4"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_stratName",
-                      "scope": 945,
+                      "scope": 941,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "bytes15",
+                      "type": "bytes10",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "name": "bytes15",
-                          "type": "bytes15"
+                          "name": "bytes10",
+                          "type": "bytes10"
                         },
-                        "id": 938,
+                        "id": 934,
                         "name": "ElementaryTypeName",
-                        "src": "562:7:4"
+                        "src": "567:7:4"
                       }
                     ],
-                    "id": 939,
+                    "id": 935,
                     "name": "VariableDeclaration",
-                    "src": "562:18:4"
+                    "src": "567:18:4"
                   }
                 ],
-                "id": 940,
+                "id": 936,
                 "name": "ParameterList",
-                "src": "541:40:4"
+                "src": "545:41:4"
               },
               {
                 "attributes": {
@@ -728,9 +645,9 @@
                   ]
                 },
                 "children": [],
-                "id": 943,
+                "id": 939,
                 "name": "ParameterList",
-                "src": "592:0:4"
+                "src": "597:0:4"
               },
               {
                 "attributes": {
@@ -745,18 +662,18 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 925,
+                      "referencedDeclaration": 921,
                       "type": "modifier ()",
                       "value": "onlyOwner"
                     },
-                    "id": 941,
+                    "id": 937,
                     "name": "Identifier",
-                    "src": "582:9:4"
+                    "src": "587:9:4"
                   }
                 ],
-                "id": 942,
+                "id": 938,
                 "name": "ModifierInvocation",
-                "src": "582:9:4"
+                "src": "587:9:4"
               },
               {
                 "attributes": {
@@ -765,14 +682,14 @@
                   ]
                 },
                 "children": [],
-                "id": 944,
+                "id": 940,
                 "name": "Block",
-                "src": "592:139:4"
+                "src": "597:139:4"
               }
             ],
-            "id": 945,
+            "id": 941,
             "name": "FunctionDefinition",
-            "src": "513:218:4"
+            "src": "517:219:4"
           },
           {
             "attributes": {
@@ -782,9 +699,9 @@
               "modifiers": [
                 null
               ],
-              "name": "getAllRegisteredStrategies",
+              "name": "getNumberRegisteredStrategies",
               "payable": false,
-              "scope": 972,
+              "scope": 952,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -797,9 +714,9 @@
                   ]
                 },
                 "children": [],
-                "id": 946,
+                "id": 942,
                 "name": "ParameterList",
-                "src": "772:2:4"
+                "src": "780:2:4"
               },
               {
                 "children": [
@@ -807,49 +724,38 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 955,
+                      "scope": 951,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "bytes15[] memory",
+                      "type": "uint256",
                       "value": null,
                       "visibility": "internal"
                     },
                     "children": [
                       {
                         "attributes": {
-                          "length": null,
-                          "type": "bytes15[] storage pointer"
+                          "name": "uint",
+                          "type": "uint256"
                         },
-                        "children": [
-                          {
-                            "attributes": {
-                              "name": "bytes15",
-                              "type": "bytes15"
-                            },
-                            "id": 947,
-                            "name": "ElementaryTypeName",
-                            "src": "800:7:4"
-                          }
-                        ],
-                        "id": 948,
-                        "name": "ArrayTypeName",
-                        "src": "800:9:4"
+                        "id": 943,
+                        "name": "ElementaryTypeName",
+                        "src": "808:4:4"
                       }
                     ],
-                    "id": 949,
+                    "id": 944,
                     "name": "VariableDeclaration",
-                    "src": "800:9:4"
+                    "src": "808:4:4"
                   }
                 ],
-                "id": 950,
+                "id": 945,
                 "name": "ParameterList",
-                "src": "799:11:4"
+                "src": "807:6:4"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 950
+                      "functionReturnParameters": 945
                     },
                     "children": [
                       {
@@ -860,251 +766,69 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "type": "bytes15[] storage ref"
+                          "type": "uint256"
                         },
                         "children": [
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 904,
-                              "type": "bytes15[] storage ref",
-                              "value": "strategies"
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
                             },
-                            "id": 951,
-                            "name": "Identifier",
-                            "src": "826:10:4"
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 904,
+                                  "type": "bytes10[] storage ref",
+                                  "value": "strategies"
+                                },
+                                "id": 946,
+                                "name": "Identifier",
+                                "src": "829:10:4"
+                              }
+                            ],
+                            "id": 947,
+                            "name": "MemberAccess",
+                            "src": "829:17:4"
                           }
                         ],
-                        "id": 952,
+                        "id": 948,
                         "name": "TupleExpression",
-                        "src": "825:12:4"
+                        "src": "828:19:4"
                       }
                     ],
-                    "id": 953,
+                    "id": 949,
                     "name": "Return",
-                    "src": "819:18:4"
+                    "src": "822:25:4"
                   }
                 ],
-                "id": 954,
+                "id": 950,
                 "name": "Block",
-                "src": "811:33:4"
+                "src": "814:40:4"
               }
             ],
-            "id": 955,
+            "id": 951,
             "name": "FunctionDefinition",
-            "src": "737:107:4"
-          },
-          {
-            "attributes": {
-              "constant": true,
-              "implemented": true,
-              "isConstructor": false,
-              "modifiers": [
-                null
-              ],
-              "name": "getStrategyAddress",
-              "payable": false,
-              "scope": 972,
-              "stateMutability": "view",
-              "superFunction": null,
-              "visibility": "public"
-            },
-            "children": [
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "_stratName",
-                      "scope": 971,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "bytes15",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "bytes15",
-                          "type": "bytes15"
-                        },
-                        "id": 956,
-                        "name": "ElementaryTypeName",
-                        "src": "878:7:4"
-                      }
-                    ],
-                    "id": 957,
-                    "name": "VariableDeclaration",
-                    "src": "878:18:4"
-                  }
-                ],
-                "id": 958,
-                "name": "ParameterList",
-                "src": "877:20:4"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "constant": false,
-                      "name": "",
-                      "scope": 971,
-                      "stateVariable": false,
-                      "storageLocation": "default",
-                      "type": "string memory",
-                      "value": null,
-                      "visibility": "internal"
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "name": "string",
-                          "type": "string storage pointer"
-                        },
-                        "id": 959,
-                        "name": "ElementaryTypeName",
-                        "src": "923:6:4"
-                      }
-                    ],
-                    "id": 960,
-                    "name": "VariableDeclaration",
-                    "src": "923:6:4"
-                  }
-                ],
-                "id": 961,
-                "name": "ParameterList",
-                "src": "922:8:4"
-              },
-              {
-                "children": [
-                  {
-                    "attributes": {
-                      "assignments": [
-                        963
-                      ]
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "constant": false,
-                          "name": "myAddress",
-                          "scope": 971,
-                          "stateVariable": false,
-                          "storageLocation": "default",
-                          "type": "string storage pointer",
-                          "value": null,
-                          "visibility": "internal"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "name": "string",
-                              "type": "string storage pointer"
-                            },
-                            "id": 962,
-                            "name": "ElementaryTypeName",
-                            "src": "938:6:4"
-                          }
-                        ],
-                        "id": 963,
-                        "name": "VariableDeclaration",
-                        "src": "938:16:4"
-                      },
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "isConstant": false,
-                          "isLValue": true,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "type": "string storage ref"
-                        },
-                        "children": [
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 908,
-                              "type": "mapping(bytes15 => string storage ref)",
-                              "value": "stratRegistry"
-                            },
-                            "id": 964,
-                            "name": "Identifier",
-                            "src": "957:13:4"
-                          },
-                          {
-                            "attributes": {
-                              "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
-                              "referencedDeclaration": 957,
-                              "type": "bytes15",
-                              "value": "_stratName"
-                            },
-                            "id": 965,
-                            "name": "Identifier",
-                            "src": "971:10:4"
-                          }
-                        ],
-                        "id": 966,
-                        "name": "IndexAccess",
-                        "src": "957:25:4"
-                      }
-                    ],
-                    "id": 967,
-                    "name": "VariableDeclarationStatement",
-                    "src": "938:44:4"
-                  },
-                  {
-                    "attributes": {
-                      "functionReturnParameters": 961
-                    },
-                    "children": [
-                      {
-                        "attributes": {
-                          "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
-                          "referencedDeclaration": 963,
-                          "type": "string storage pointer",
-                          "value": "myAddress"
-                        },
-                        "id": 968,
-                        "name": "Identifier",
-                        "src": "998:9:4"
-                      }
-                    ],
-                    "id": 969,
-                    "name": "Return",
-                    "src": "990:17:4"
-                  }
-                ],
-                "id": 970,
-                "name": "Block",
-                "src": "930:84:4"
-              }
-            ],
-            "id": 971,
-            "name": "FunctionDefinition",
-            "src": "850:164:4"
+            "src": "742:112:4"
           }
         ],
-        "id": 972,
+        "id": 952,
         "name": "ContractDefinition",
-        "src": "26:991:4"
+        "src": "26:1011:4"
       }
     ],
-    "id": 973,
+    "id": 953,
     "name": "SourceUnit",
-    "src": "0:1018:4"
+    "src": "0:1038:4"
   },
   "compiler": {
     "name": "solc",
@@ -1112,5 +836,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-04-23T10:58:17.473Z"
+  "updatedAt": "2018-04-23T12:23:26.606Z"
 }

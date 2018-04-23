@@ -3,13 +3,13 @@ pragma solidity ^0.4.18;
 contract StrategyManager{
 
     address public owner;
-    bytes15 public name;      //the name of the strategy
-    bytes15[] strategies;
+    bytes10 public name;      //the name of the strategy
+    bytes10[] strategies;
 
     //mapping(bytes15 => StrategyPublisher) public stratRegistry;
-    mapping(bytes15 => string) public stratRegistry;
+    //mapping(bytes10 => address) public stratRegistry;
 
-    event newRegister(bytes15 name, string stratAddress);
+    event newRegister(bytes10 name, address stratAddress);
 
 
     modifier onlyOwner(){
@@ -17,23 +17,23 @@ contract StrategyManager{
         _;
     }
 
-    function StrategyManager(bytes15 _managerName){
+    function StrategyManager(bytes10 _managerName){
       name = _managerName;
     }
 
-    function registerNewStrategy(string _newAddress, bytes15 _stratName) onlyOwner {
+    function registerNewStrategy(address _newAddress, bytes10 _stratName) onlyOwner {
       //stratRegistry[_stratName] = _newAddress;
       //strategies.push(_stratName);
       //newRegister(_stratName, _newAddress);
     }
 
-    function getAllRegisteredStrategies() public constant returns (bytes15[]) {
-      return(strategies);
+    function getNumberRegisteredStrategies() public constant returns (uint) {
+      return(strategies.length);
     }
 
-    function getStrategyAddress(bytes15 _stratName) public constant returns (string){
-      string myAddress = stratRegistry[_stratName];
-      return  myAddress;
-    }
+//    function getStrategyAddress(bytes10 _stratName) public constant returns (address){
+//      address myAddress = stratRegistry[_stratName];
+//      return(myAddress);
+//    }
 
 }
