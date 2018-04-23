@@ -23,5 +23,9 @@ contract BlockchainSpeaker{
       tokens.push(tokenName);
     }
 
+    function addTokenAndStrategy(string strategyName,address tokenName) {
+      strategies.push(strategyName);
+      tokens.push(tokenName);
+    }
 
 }
