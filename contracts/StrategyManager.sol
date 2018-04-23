@@ -42,4 +42,8 @@ contract StrategyManager{
       return(_stratAddress);
     }
 
+    function getAllStrategies() public constant returns(bytes15[]){
+      return(strategies);
+    }
+
 }
