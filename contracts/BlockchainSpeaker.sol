@@ -3,10 +3,16 @@ pragma solidity ^0.4.18;
 
 contract BlockchainSpeaker{
 
+    address public owner;
     address token;
     string name;
     string[] strategies;
     address[] tokens;
+
+    modifier onlyOwner(){
+        require(msg.sender==owner);
+        _;
+    }
 
     function BlockchainSpeaker(address _token, string _name){
         token = _token;
@@ -21,7 +27,7 @@ contract BlockchainSpeaker{
       tokens.push(tokenName);
     }
 
-    function addTokenAndStrategy(string strategyName,address tokenName) {
+    function addTokenAndStrategy(string strategyName,address tokenName) onlyOwner {
       strategies.push(strategyName);
       tokens.push(tokenName);
     }
