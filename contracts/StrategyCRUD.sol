@@ -2,6 +2,9 @@ pragma solidity ^0.4.6;
 
 contract StrategyCrud {
 
+  bytes15 managerName;
+  address owner;
+
   struct StrategyStruct {
     address strategyAddress;
     uint strategyCategory;
@@ -11,9 +14,19 @@ contract StrategyCrud {
   mapping(bytes15 => StrategyStruct) private strategyStructs;
   bytes15[] private strategyIndex;
 
-  event LogNewUser   (bytes15 indexed strategyName, uint index, address strategyAddress, uint strategyCategory);
-  event LogUpdateUser(bytes15 indexed strategyName, uint index, address strategyAddress, uint strategyCategory);
-  event LogDeleteUser(bytes15 indexed strategyName, uint index);
+  event LogNewStrategy   (bytes15 indexed strategyName, uint index, address strategyAddress, uint strategyCategory);
+  event LogUpdateStrategy(bytes15 indexed strategyName, uint index, address strategyAddress, uint strategyCategory);
+  event LogDeleteStrategy(bytes15 indexed strategyName, uint index);
+
+  modifier onlyOwner(){
+      require(msg.sender==owner);
+      _;
+  }
+
+  function StrategyCrud(bytes15 _name){
+      owner = msg.sender;
+      managerName = _name;
+  }
 
   function isStrategy(bytes15 strategyName)
     public
@@ -28,6 +41,7 @@ contract StrategyCrud {
     bytes15 strategyName,
     address strategyAddress,
     uint    strategyCategory)
+    onlyOwner
     public
     returns(uint index)
   {
@@ -35,7 +49,7 @@ contract StrategyCrud {
     strategyStructs[strategyName].strategyAddress = strategyAddress;
     strategyStructs[strategyName].strategyCategory   = strategyCategory;
     strategyStructs[strategyName].index     = strategyIndex.push(strategyName)-1;
-    LogNewUser(
+    LogNewStrategy(
         strategyName,
         strategyStructs[strategyName].index,
         strategyAddress,
@@ -43,7 +57,8 @@ contract StrategyCrud {
     return strategyIndex.length-1;
   }
 
-  function deleteUser(bytes15 strategyName)
+  function deleteStrategy(bytes15 strategyName)
+    onlyOwner
     public
     returns(uint index)
   {
@@ -53,10 +68,10 @@ contract StrategyCrud {
     strategyIndex[rowToDelete] = keyToMove;
     strategyStructs[keyToMove].index = rowToDelete;
     strategyIndex.length--;
-    LogDeleteUser(
+    LogDeleteStrategy(
         strategyName,
         rowToDelete);
-    LogUpdateUser(
+    LogUpdateStrategy(
         keyToMove,
         rowToDelete,
         strategyStructs[keyToMove].strategyAddress,
@@ -77,12 +92,13 @@ contract StrategyCrud {
   }
 
   function updateStrategyAddress(bytes15 strategyName, address strategyAddress)
+    onlyOwner
     public
     returns(bool success)
   {
     if(!isStrategy(strategyName)) throw;
     strategyStructs[strategyName].strategyAddress = strategyAddress;
-    LogUpdateUser(
+    LogUpdateStrategy(
       strategyName,
       strategyStructs[strategyName].index,
       strategyAddress,
@@ -91,12 +107,13 @@ contract StrategyCrud {
   }
 
   function updateStrategyCategory(bytes15 strategyName, uint strategyCategory)
+    onlyOwner
     public
     returns(bool success)
   {
     if(!isStrategy(strategyName)) throw;
     strategyStructs[strategyName].strategyCategory = strategyCategory;
-    LogUpdateUser(
+    LogUpdateStrategy(
       strategyName,
       strategyStructs[strategyName].index,
       strategyStructs[strategyName].strategyAddress,
