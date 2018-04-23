@@ -229,7 +229,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 985,
+          "SourceUnit": 968,
           "absolutePath": "/home/sduprey/My_Truffle_Project/Decentralized_Orderbook/contracts/TradingToken.sol",
           "file": "./TradingToken.sol",
           "scope": 442,
@@ -321,7 +321,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "TradingToken",
-                  "referencedDeclaration": 984,
+                  "referencedDeclaration": 967,
                   "type": "contract TradingToken"
                 },
                 "id": 63,
@@ -590,7 +590,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 984,
+                                  "referencedDeclaration": 967,
                                   "type": "type(contract TradingToken)",
                                   "value": "TradingToken"
                                 },
@@ -1167,7 +1167,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferFrom",
-                              "referencedDeclaration": 1353,
+                              "referencedDeclaration": 1336,
                               "type": "function (address,address,uint256) external returns (bool)"
                             },
                             "children": [
@@ -3091,7 +3091,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1534,
+                                          "referencedDeclaration": 1517,
                                           "type": "contract DecentralizedOrderBook",
                                           "value": "this"
                                         },
@@ -3675,7 +3675,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1502,
+                              "referencedDeclaration": 1485,
                               "type": "function (bool) pure",
                               "value": "assert"
                             },
@@ -4001,7 +4001,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1511,
+                                  "referencedDeclaration": 1494,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -4194,7 +4194,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1502,
+                                      "referencedDeclaration": 1485,
                                       "type": "function (bool) pure",
                                       "value": "assert"
                                     },
@@ -4235,7 +4235,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 1511,
+                                              "referencedDeclaration": 1494,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -4366,7 +4366,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 1511,
+                                              "referencedDeclaration": 1494,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -4402,7 +4402,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1511,
+                                          "referencedDeclaration": 1494,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -4460,7 +4460,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1502,
+                                      "referencedDeclaration": 1485,
                                       "type": "function (bool) pure",
                                       "value": "assert"
                                     },
@@ -4515,7 +4515,7 @@
                                               "isPure": false,
                                               "lValueRequested": false,
                                               "member_name": "allowance",
-                                              "referencedDeclaration": 1397,
+                                              "referencedDeclaration": 1380,
                                               "type": "function (address,address) view external returns (uint256)"
                                             },
                                             "children": [
@@ -4556,7 +4556,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 1511,
+                                                  "referencedDeclaration": 1494,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -4575,7 +4575,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 1534,
+                                              "referencedDeclaration": 1517,
                                               "type": "contract DecentralizedOrderBook",
                                               "value": "this"
                                             },
@@ -4927,7 +4927,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 1511,
+                                                  "referencedDeclaration": 1494,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5065,7 +5065,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 1511,
+                                                  "referencedDeclaration": 1494,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5384,7 +5384,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 1511,
+                                                  "referencedDeclaration": 1494,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5522,7 +5522,7 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 1511,
+                                                  "referencedDeclaration": 1494,
                                                   "type": "msg",
                                                   "value": "msg"
                                                 },
@@ -5591,5 +5591,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-04-23T10:18:17.053Z"
+  "updatedAt": "2018-04-23T10:36:46.594Z"
 }

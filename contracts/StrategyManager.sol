@@ -22,9 +22,9 @@ contract StrategyManager{
     }
 
     function registerNewStrategy(string _newAddress, bytes15 _stratName) onlyOwner {
-      stratRegistry[_stratName] = _newAddress;
-      strategies.push(_stratName);
-      newRegister(_stratName, _newAddress);
+      //stratRegistry[_stratName] = _newAddress;
+      //strategies.push(_stratName);
+      //newRegister(_stratName, _newAddress);
     }
 
     function getAllRegisteredStrategies() public constant returns (bytes15[]) {
