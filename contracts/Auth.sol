@@ -8,7 +8,7 @@ contract Auth {
         name = "Auth 1.0";
     }
 
-    function verify(bytes32 _message, uint8 _v, bytes32 _r, bytes32 _s) constant returns (address) {
+    function verify(string _message, uint8 _v, bytes32 _r, bytes32 _s) constant returns (address) {
 	bytes32 _messageHash = sha3(_message);
         address signer = ecrecover(_messageHash, _v, _r, _s);
         return signer;
