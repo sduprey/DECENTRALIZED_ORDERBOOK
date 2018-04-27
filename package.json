@@ -1,0 +1,29 @@
+{
+  "name": "Decentralized_Orderbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "1.9.0",
+    "truffle": "^4.1.7",
+    "zeppelin-solidity": "^1.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sduprey/Decentralized_Orderbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sduprey/Decentralized_Orderbook/issues"
+  },
+  "homepage": "https://github.com/sduprey/Decentralized_Orderbook#readme"
+}
