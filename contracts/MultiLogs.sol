@@ -64,7 +64,7 @@ Compute the variation of price of index according to the last position EOD
      }
      else{
          variation = int256(pxCur) - int256(pxPre);
-         variation *= 1e64;
+         variation *= 1e16;
          variation /=  pxPre;
          if(lastPosit==-1){
              variation *=-1;
@@ -85,7 +85,7 @@ Compute the variation of price of index according to the last position EOD
      if(variation==0) return lastValue;
      else {
          int256 delta = int256(lastValue) * variation;
-         delta/=1e64;
+         delta/=1e16;
          return uint48(int256(lastValue) +delta);
      }
   }
