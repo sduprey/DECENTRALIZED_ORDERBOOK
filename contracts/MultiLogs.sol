@@ -16,7 +16,8 @@ contract MultiLogs {
 
     event newRecord(bytes15 indexed name, uint32 indexed date, int256 stratVariation, uint48 stratPrice, int8 position,int8 category);
 
-    event newVariation(bytes15 indexed name, uint32 indexed date, int256 stratVariation, uint48 stratPrice, int8 position,int8 category);
+    event absoluteVariation(int256 stratVariation);
+    event relativeVariation(int256 stratVariation);
 
     function MultiLogs(){
         name = "Multi 1.0";
@@ -66,8 +67,10 @@ Compute the variation of price of index according to the last position EOD
      }
      else{
          variation = int256(pxCur) - int256(pxPre);
+         emit absoluteVariation(variation);
          variation *= 1e16;
          variation /=  pxPre;
+         emit relativeVariation(variation);
          if(lastPosit==-1){
              variation *=-1;
          }
