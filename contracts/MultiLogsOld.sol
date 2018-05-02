@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-contract MultiLogs {
+contract MultiLogsOld {
 
     bytes15 public name;
 
@@ -16,7 +16,7 @@ contract MultiLogs {
 
     event newRecord(bytes15 indexed name, uint32 indexed date, int256 stratVariation, uint48 stratPrice, int8 position,int8 category);
 
-    function MultiLogs(){
+    function MultiLogsOld(){
         name = "Multi 1.0";
         explicitState.price =100000000;
     }
