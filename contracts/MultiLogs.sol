@@ -18,6 +18,7 @@ contract MultiLogs {
 
     function MultiLogs(){
         name = "Multi 1.0";
+        explicitState.price =100;
     }
     // that backtesting function requires that the strategy explicitState be at the date matching
     // the beginning of the array date
@@ -25,7 +26,7 @@ contract MultiLogs {
       uint batchlength = positions.length;
       require(dates.length==batchlength && prices.length==batchlength);
 
-      uint48 strategyInitPrice = 100;
+      uint48 strategyInitPrice = explicitState.price;
 
       uint48 strategyPrice = libbatchbacktest(name,strategyInitPrice,dates,prices,positions);
 
