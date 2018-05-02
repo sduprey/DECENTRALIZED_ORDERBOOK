@@ -324,7 +324,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2058,
+                            "referencedDeclaration": 2337,
                             "src": "208:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -378,10 +378,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2061,
-                        2062
+                        2340,
+                        2341
                       ],
-                      "referencedDeclaration": 2061,
+                      "referencedDeclaration": 2340,
                       "src": "200:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1566,7 +1566,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2058,
+                            "referencedDeclaration": 2337,
                             "src": "208:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1620,10 +1620,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2061,
-                        2062
+                        2340,
+                        2341
                       ],
-                      "referencedDeclaration": 2061,
+                      "referencedDeclaration": 2340,
                       "src": "200:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2601,5 +2601,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-27T14:15:50.463Z"
+  "updatedAt": "2018-05-02T07:48:41.151Z"
 }

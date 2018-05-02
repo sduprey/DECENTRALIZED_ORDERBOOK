@@ -1,4 +1,4 @@
-pragma solidity ^0.4.6;
+pragma solidity ^0.4.18;
 
 contract StrategyCrud {
 
@@ -49,7 +49,7 @@ contract StrategyCrud {
     strategyStructs[strategyName].strategyAddress = strategyAddress;
     strategyStructs[strategyName].strategyCategory   = strategyCategory;
     strategyStructs[strategyName].index     = strategyIndex.push(strategyName)-1;
-    LogNewStrategy(
+    emit LogNewStrategy(
         strategyName,
         strategyStructs[strategyName].index,
         strategyAddress,
@@ -68,10 +68,10 @@ contract StrategyCrud {
     strategyIndex[rowToDelete] = keyToMove;
     strategyStructs[keyToMove].index = rowToDelete;
     strategyIndex.length--;
-    LogDeleteStrategy(
+    emit LogDeleteStrategy(
         strategyName,
         rowToDelete);
-    LogUpdateStrategy(
+    emit LogUpdateStrategy(
         keyToMove,
         rowToDelete,
         strategyStructs[keyToMove].strategyAddress,
@@ -98,7 +98,7 @@ contract StrategyCrud {
   {
     if(!isStrategy(strategyName)) throw;
     strategyStructs[strategyName].strategyAddress = strategyAddress;
-    LogUpdateStrategy(
+    emit LogUpdateStrategy(
       strategyName,
       strategyStructs[strategyName].index,
       strategyAddress,
@@ -113,7 +113,7 @@ contract StrategyCrud {
   {
     if(!isStrategy(strategyName)) throw;
     strategyStructs[strategyName].strategyCategory = strategyCategory;
-    LogUpdateStrategy(
+    emit LogUpdateStrategy(
       strategyName,
       strategyStructs[strategyName].index,
       strategyStructs[strategyName].strategyAddress,

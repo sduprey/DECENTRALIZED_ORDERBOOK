@@ -216,7 +216,7 @@
         "id": 215,
         "nodeType": "ImportDirective",
         "scope": 600,
-        "sourceUnit": 1016,
+        "sourceUnit": 1295,
         "src": "28:27:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -227,7 +227,7 @@
         "id": 216,
         "nodeType": "ImportDirective",
         "scope": 600,
-        "sourceUnit": 1533,
+        "sourceUnit": 1812,
         "src": "57:28:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -235,7 +235,7 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          1015
+          1294
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -302,7 +302,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TradingToken_$1532",
+              "typeIdentifier": "t_contract$_TradingToken_$1811",
               "typeString": "contract TradingToken"
             },
             "typeName": {
@@ -310,10 +310,10 @@
               "id": 221,
               "name": "TradingToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1532,
+              "referencedDeclaration": 1811,
               "src": "178:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TradingToken_$1532",
+                "typeIdentifier": "t_contract$_TradingToken_$1811",
                 "typeString": "contract TradingToken"
               }
             },
@@ -485,7 +485,7 @@
                       "referencedDeclaration": 222,
                       "src": "413:5:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TradingToken_$1532",
+                        "typeIdentifier": "t_contract$_TradingToken_$1811",
                         "typeString": "contract TradingToken"
                       }
                     },
@@ -519,10 +519,10 @@
                         "name": "TradingToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1532,
+                        "referencedDeclaration": 1811,
                         "src": "421:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_TradingToken_$1532_$",
+                          "typeIdentifier": "t_type$_t_contract$_TradingToken_$1811_$",
                           "typeString": "type(contract TradingToken)"
                         }
                       },
@@ -536,13 +536,13 @@
                       "nodeType": "FunctionCall",
                       "src": "421:20:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TradingToken_$1532",
+                        "typeIdentifier": "t_contract$_TradingToken_$1811",
                         "typeString": "contract TradingToken"
                       }
                     },
                     "src": "413:28:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TradingToken_$1532",
+                      "typeIdentifier": "t_contract$_TradingToken_$1811",
                       "typeString": "contract TradingToken"
                     }
                   },
@@ -1030,7 +1030,7 @@
                         "referencedDeclaration": 222,
                         "src": "726:5:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TradingToken_$1532",
+                          "typeIdentifier": "t_contract$_TradingToken_$1811",
                           "typeString": "contract TradingToken"
                         }
                       },
@@ -1041,7 +1041,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1897,
+                      "referencedDeclaration": 2176,
                       "src": "726:18:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -1383,7 +1383,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_SlotManager_$1015",
+                              "typeIdentifier": "t_contract$_SlotManager_$1294",
                               "typeString": "contract SlotManager"
                             },
                             "typeName": {
@@ -1391,10 +1391,10 @@
                               "id": 327,
                               "name": "SlotManager",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 1015,
+                              "referencedDeclaration": 1294,
                               "src": "1177:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -1431,10 +1431,10 @@
                             "name": "SlotManager",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1015,
+                            "referencedDeclaration": 1294,
                             "src": "1203:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                               "typeString": "type(contract SlotManager)"
                             }
                           },
@@ -1448,7 +1448,7 @@
                           "nodeType": "FunctionCall",
                           "src": "1203:31:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_SlotManager_$1015",
+                            "typeIdentifier": "t_contract$_SlotManager_$1294",
                             "typeString": "contract SlotManager"
                           }
                         },
@@ -1540,7 +1540,7 @@
                               "referencedDeclaration": 328,
                               "src": "1249:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -1551,7 +1551,7 @@
                             "lValueRequested": false,
                             "memberName": "handleSlotOrder",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 912,
+                            "referencedDeclaration": 1191,
                             "src": "1249:27:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$_t_uint256_$",
@@ -2053,7 +2053,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_SlotManager_$1015",
+                              "typeIdentifier": "t_contract$_SlotManager_$1294",
                               "typeString": "contract SlotManager"
                             },
                             "typeName": {
@@ -2061,10 +2061,10 @@
                               "id": 380,
                               "name": "SlotManager",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 1015,
+                              "referencedDeclaration": 1294,
                               "src": "1813:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -2101,10 +2101,10 @@
                             "name": "SlotManager",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1015,
+                            "referencedDeclaration": 1294,
                             "src": "1839:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                               "typeString": "type(contract SlotManager)"
                             }
                           },
@@ -2118,7 +2118,7 @@
                           "nodeType": "FunctionCall",
                           "src": "1839:31:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_SlotManager_$1015",
+                            "typeIdentifier": "t_contract$_SlotManager_$1294",
                             "typeString": "contract SlotManager"
                           }
                         },
@@ -2210,7 +2210,7 @@
                               "referencedDeclaration": 381,
                               "src": "1885:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -2221,7 +2221,7 @@
                             "lValueRequested": false,
                             "memberName": "handleSlotOrder",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 912,
+                            "referencedDeclaration": 1191,
                             "src": "1885:27:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$_t_uint256_$",
@@ -2726,7 +2726,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2089,
+                                "referencedDeclaration": 2368,
                                 "src": "2227:4:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_DecentralizedOrderBook_$599",
@@ -2766,7 +2766,7 @@
                               "nodeType": "NewExpression",
                               "src": "2211:15:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_SlotManager_$1015_$",
+                                "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_SlotManager_$1294_$",
                                 "typeString": "function (address,uint256) returns (contract SlotManager)"
                               },
                               "typeName": {
@@ -2774,10 +2774,10 @@
                                 "id": 421,
                                 "name": "SlotManager",
                                 "nodeType": "UserDefinedTypeName",
-                                "referencedDeclaration": 1015,
+                                "referencedDeclaration": 1294,
                                 "src": "2215:11:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                  "typeIdentifier": "t_contract$_SlotManager_$1294",
                                   "typeString": "contract SlotManager"
                                 }
                               }
@@ -2792,7 +2792,7 @@
                             "nodeType": "FunctionCall",
                             "src": "2211:28:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_SlotManager_$1015",
+                              "typeIdentifier": "t_contract$_SlotManager_$1294",
                               "typeString": "contract SlotManager"
                             }
                           },
@@ -2897,7 +2897,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SlotManager_$1015",
+                        "typeIdentifier": "t_contract$_SlotManager_$1294",
                         "typeString": "contract SlotManager"
                       },
                       "typeName": {
@@ -2905,10 +2905,10 @@
                         "id": 436,
                         "name": "SlotManager",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1015,
+                        "referencedDeclaration": 1294,
                         "src": "2366:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -2945,10 +2945,10 @@
                       "name": "SlotManager",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1015,
+                      "referencedDeclaration": 1294,
                       "src": "2392:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                         "typeString": "type(contract SlotManager)"
                       }
                     },
@@ -2962,7 +2962,7 @@
                     "nodeType": "FunctionCall",
                     "src": "2392:31:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SlotManager_$1015",
+                      "typeIdentifier": "t_contract$_SlotManager_$1294",
                       "typeString": "contract SlotManager"
                     }
                   },
@@ -3054,7 +3054,7 @@
                         "referencedDeclaration": 437,
                         "src": "2434:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -3065,7 +3065,7 @@
                       "lValueRequested": false,
                       "memberName": "handleSlotOrder",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 912,
+                      "referencedDeclaration": 1191,
                       "src": "2434:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$_t_uint256_$",
@@ -3410,7 +3410,7 @@
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2047,
+                      "referencedDeclaration": 2326,
                       "src": "2656:6:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -3450,7 +3450,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SlotManager_$1015",
+                        "typeIdentifier": "t_contract$_SlotManager_$1294",
                         "typeString": "contract SlotManager"
                       },
                       "typeName": {
@@ -3458,10 +3458,10 @@
                         "id": 475,
                         "name": "SlotManager",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1015,
+                        "referencedDeclaration": 1294,
                         "src": "2758:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -3498,10 +3498,10 @@
                       "name": "SlotManager",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1015,
+                      "referencedDeclaration": 1294,
                       "src": "2784:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                         "typeString": "type(contract SlotManager)"
                       }
                     },
@@ -3515,7 +3515,7 @@
                     "nodeType": "FunctionCall",
                     "src": "2784:31:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SlotManager_$1015",
+                      "typeIdentifier": "t_contract$_SlotManager_$1294",
                       "typeString": "contract SlotManager"
                     }
                   },
@@ -3573,7 +3573,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2058,
+                          "referencedDeclaration": 2337,
                           "src": "2888:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3623,7 +3623,7 @@
                         "referencedDeclaration": 476,
                         "src": "2826:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -3634,7 +3634,7 @@
                       "lValueRequested": false,
                       "memberName": "handleSlotDeleteOrder",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 939,
+                      "referencedDeclaration": 1218,
                       "src": "2826:33:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$__$",
@@ -3818,7 +3818,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "3471:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -3845,7 +3845,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 2089,
+                                    "referencedDeclaration": 2368,
                                     "src": "3482:4:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_DecentralizedOrderBook_$599",
@@ -3873,7 +3873,7 @@
                                     "referencedDeclaration": 222,
                                     "src": "3455:5:2",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TradingToken_$1532",
+                                      "typeIdentifier": "t_contract$_TradingToken_$1811",
                                       "typeString": "contract TradingToken"
                                     }
                                   },
@@ -3884,7 +3884,7 @@
                                   "lValueRequested": false,
                                   "memberName": "allowance",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 1941,
+                                  "referencedDeclaration": 2220,
                                   "src": "3455:15:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$returns$_t_uint256_$",
@@ -3943,7 +3943,7 @@
                             "name": "assert",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2047,
+                            "referencedDeclaration": 2326,
                             "src": "3448:6:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -4001,7 +4001,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 2337,
                                   "src": "3190:3:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -4087,7 +4087,7 @@
                             "name": "assert",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2047,
+                            "referencedDeclaration": 2326,
                             "src": "3183:6:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -4144,7 +4144,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2058,
+                                "referencedDeclaration": 2337,
                                 "src": "3246:3:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -4186,7 +4186,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2058,
+                              "referencedDeclaration": 2337,
                               "src": "3261:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -4405,7 +4405,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "4390:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -4582,7 +4582,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "4216:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -4831,7 +4831,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "3964:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -5008,7 +5008,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "3789:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -5226,7 +5226,7 @@
         "id": 215,
         "nodeType": "ImportDirective",
         "scope": 600,
-        "sourceUnit": 1016,
+        "sourceUnit": 1295,
         "src": "28:27:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5237,7 +5237,7 @@
         "id": 216,
         "nodeType": "ImportDirective",
         "scope": 600,
-        "sourceUnit": 1533,
+        "sourceUnit": 1812,
         "src": "57:28:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5245,7 +5245,7 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          1015
+          1294
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -5312,7 +5312,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TradingToken_$1532",
+              "typeIdentifier": "t_contract$_TradingToken_$1811",
               "typeString": "contract TradingToken"
             },
             "typeName": {
@@ -5320,10 +5320,10 @@
               "id": 221,
               "name": "TradingToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1532,
+              "referencedDeclaration": 1811,
               "src": "178:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TradingToken_$1532",
+                "typeIdentifier": "t_contract$_TradingToken_$1811",
                 "typeString": "contract TradingToken"
               }
             },
@@ -5495,7 +5495,7 @@
                       "referencedDeclaration": 222,
                       "src": "413:5:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TradingToken_$1532",
+                        "typeIdentifier": "t_contract$_TradingToken_$1811",
                         "typeString": "contract TradingToken"
                       }
                     },
@@ -5529,10 +5529,10 @@
                         "name": "TradingToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1532,
+                        "referencedDeclaration": 1811,
                         "src": "421:12:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_TradingToken_$1532_$",
+                          "typeIdentifier": "t_type$_t_contract$_TradingToken_$1811_$",
                           "typeString": "type(contract TradingToken)"
                         }
                       },
@@ -5546,13 +5546,13 @@
                       "nodeType": "FunctionCall",
                       "src": "421:20:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TradingToken_$1532",
+                        "typeIdentifier": "t_contract$_TradingToken_$1811",
                         "typeString": "contract TradingToken"
                       }
                     },
                     "src": "413:28:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TradingToken_$1532",
+                      "typeIdentifier": "t_contract$_TradingToken_$1811",
                       "typeString": "contract TradingToken"
                     }
                   },
@@ -6040,7 +6040,7 @@
                         "referencedDeclaration": 222,
                         "src": "726:5:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TradingToken_$1532",
+                          "typeIdentifier": "t_contract$_TradingToken_$1811",
                           "typeString": "contract TradingToken"
                         }
                       },
@@ -6051,7 +6051,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1897,
+                      "referencedDeclaration": 2176,
                       "src": "726:18:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -6393,7 +6393,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_SlotManager_$1015",
+                              "typeIdentifier": "t_contract$_SlotManager_$1294",
                               "typeString": "contract SlotManager"
                             },
                             "typeName": {
@@ -6401,10 +6401,10 @@
                               "id": 327,
                               "name": "SlotManager",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 1015,
+                              "referencedDeclaration": 1294,
                               "src": "1177:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -6441,10 +6441,10 @@
                             "name": "SlotManager",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1015,
+                            "referencedDeclaration": 1294,
                             "src": "1203:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                               "typeString": "type(contract SlotManager)"
                             }
                           },
@@ -6458,7 +6458,7 @@
                           "nodeType": "FunctionCall",
                           "src": "1203:31:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_SlotManager_$1015",
+                            "typeIdentifier": "t_contract$_SlotManager_$1294",
                             "typeString": "contract SlotManager"
                           }
                         },
@@ -6550,7 +6550,7 @@
                               "referencedDeclaration": 328,
                               "src": "1249:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -6561,7 +6561,7 @@
                             "lValueRequested": false,
                             "memberName": "handleSlotOrder",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 912,
+                            "referencedDeclaration": 1191,
                             "src": "1249:27:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$_t_uint256_$",
@@ -7063,7 +7063,7 @@
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_SlotManager_$1015",
+                              "typeIdentifier": "t_contract$_SlotManager_$1294",
                               "typeString": "contract SlotManager"
                             },
                             "typeName": {
@@ -7071,10 +7071,10 @@
                               "id": 380,
                               "name": "SlotManager",
                               "nodeType": "UserDefinedTypeName",
-                              "referencedDeclaration": 1015,
+                              "referencedDeclaration": 1294,
                               "src": "1813:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -7111,10 +7111,10 @@
                             "name": "SlotManager",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1015,
+                            "referencedDeclaration": 1294,
                             "src": "1839:11:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                              "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                               "typeString": "type(contract SlotManager)"
                             }
                           },
@@ -7128,7 +7128,7 @@
                           "nodeType": "FunctionCall",
                           "src": "1839:31:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_SlotManager_$1015",
+                            "typeIdentifier": "t_contract$_SlotManager_$1294",
                             "typeString": "contract SlotManager"
                           }
                         },
@@ -7220,7 +7220,7 @@
                               "referencedDeclaration": 381,
                               "src": "1885:11:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                "typeIdentifier": "t_contract$_SlotManager_$1294",
                                 "typeString": "contract SlotManager"
                               }
                             },
@@ -7231,7 +7231,7 @@
                             "lValueRequested": false,
                             "memberName": "handleSlotOrder",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 912,
+                            "referencedDeclaration": 1191,
                             "src": "1885:27:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$_t_uint256_$",
@@ -7736,7 +7736,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2089,
+                                "referencedDeclaration": 2368,
                                 "src": "2227:4:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_DecentralizedOrderBook_$599",
@@ -7776,7 +7776,7 @@
                               "nodeType": "NewExpression",
                               "src": "2211:15:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_SlotManager_$1015_$",
+                                "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_SlotManager_$1294_$",
                                 "typeString": "function (address,uint256) returns (contract SlotManager)"
                               },
                               "typeName": {
@@ -7784,10 +7784,10 @@
                                 "id": 421,
                                 "name": "SlotManager",
                                 "nodeType": "UserDefinedTypeName",
-                                "referencedDeclaration": 1015,
+                                "referencedDeclaration": 1294,
                                 "src": "2215:11:2",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_SlotManager_$1015",
+                                  "typeIdentifier": "t_contract$_SlotManager_$1294",
                                   "typeString": "contract SlotManager"
                                 }
                               }
@@ -7802,7 +7802,7 @@
                             "nodeType": "FunctionCall",
                             "src": "2211:28:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_SlotManager_$1015",
+                              "typeIdentifier": "t_contract$_SlotManager_$1294",
                               "typeString": "contract SlotManager"
                             }
                           },
@@ -7907,7 +7907,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SlotManager_$1015",
+                        "typeIdentifier": "t_contract$_SlotManager_$1294",
                         "typeString": "contract SlotManager"
                       },
                       "typeName": {
@@ -7915,10 +7915,10 @@
                         "id": 436,
                         "name": "SlotManager",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1015,
+                        "referencedDeclaration": 1294,
                         "src": "2366:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -7955,10 +7955,10 @@
                       "name": "SlotManager",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1015,
+                      "referencedDeclaration": 1294,
                       "src": "2392:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                         "typeString": "type(contract SlotManager)"
                       }
                     },
@@ -7972,7 +7972,7 @@
                     "nodeType": "FunctionCall",
                     "src": "2392:31:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SlotManager_$1015",
+                      "typeIdentifier": "t_contract$_SlotManager_$1294",
                       "typeString": "contract SlotManager"
                     }
                   },
@@ -8064,7 +8064,7 @@
                         "referencedDeclaration": 437,
                         "src": "2434:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -8075,7 +8075,7 @@
                       "lValueRequested": false,
                       "memberName": "handleSlotOrder",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 912,
+                      "referencedDeclaration": 1191,
                       "src": "2434:27:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$_t_uint256_$",
@@ -8420,7 +8420,7 @@
                       "name": "assert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2047,
+                      "referencedDeclaration": 2326,
                       "src": "2656:6:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -8460,7 +8460,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_SlotManager_$1015",
+                        "typeIdentifier": "t_contract$_SlotManager_$1294",
                         "typeString": "contract SlotManager"
                       },
                       "typeName": {
@@ -8468,10 +8468,10 @@
                         "id": 475,
                         "name": "SlotManager",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1015,
+                        "referencedDeclaration": 1294,
                         "src": "2758:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -8508,10 +8508,10 @@
                       "name": "SlotManager",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1015,
+                      "referencedDeclaration": 1294,
                       "src": "2784:11:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1015_$",
+                        "typeIdentifier": "t_type$_t_contract$_SlotManager_$1294_$",
                         "typeString": "type(contract SlotManager)"
                       }
                     },
@@ -8525,7 +8525,7 @@
                     "nodeType": "FunctionCall",
                     "src": "2784:31:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_SlotManager_$1015",
+                      "typeIdentifier": "t_contract$_SlotManager_$1294",
                       "typeString": "contract SlotManager"
                     }
                   },
@@ -8583,7 +8583,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2058,
+                          "referencedDeclaration": 2337,
                           "src": "2888:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -8633,7 +8633,7 @@
                         "referencedDeclaration": 476,
                         "src": "2826:11:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_SlotManager_$1015",
+                          "typeIdentifier": "t_contract$_SlotManager_$1294",
                           "typeString": "contract SlotManager"
                         }
                       },
@@ -8644,7 +8644,7 @@
                       "lValueRequested": false,
                       "memberName": "handleSlotDeleteOrder",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 939,
+                      "referencedDeclaration": 1218,
                       "src": "2826:33:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_address_$returns$__$",
@@ -8828,7 +8828,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "3471:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -8855,7 +8855,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 2089,
+                                    "referencedDeclaration": 2368,
                                     "src": "3482:4:2",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_DecentralizedOrderBook_$599",
@@ -8883,7 +8883,7 @@
                                     "referencedDeclaration": 222,
                                     "src": "3455:5:2",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TradingToken_$1532",
+                                      "typeIdentifier": "t_contract$_TradingToken_$1811",
                                       "typeString": "contract TradingToken"
                                     }
                                   },
@@ -8894,7 +8894,7 @@
                                   "lValueRequested": false,
                                   "memberName": "allowance",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 1941,
+                                  "referencedDeclaration": 2220,
                                   "src": "3455:15:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_view$_t_address_$_t_address_$returns$_t_uint256_$",
@@ -8953,7 +8953,7 @@
                             "name": "assert",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2047,
+                            "referencedDeclaration": 2326,
                             "src": "3448:6:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -9011,7 +9011,7 @@
                                   "name": "msg",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2058,
+                                  "referencedDeclaration": 2337,
                                   "src": "3190:3:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_message",
@@ -9097,7 +9097,7 @@
                             "name": "assert",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2047,
+                            "referencedDeclaration": 2326,
                             "src": "3183:6:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
@@ -9154,7 +9154,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2058,
+                                "referencedDeclaration": 2337,
                                 "src": "3246:3:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -9196,7 +9196,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2058,
+                              "referencedDeclaration": 2337,
                               "src": "3261:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -9415,7 +9415,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "4390:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -9592,7 +9592,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "4216:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -9841,7 +9841,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "3964:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -10018,7 +10018,7 @@
                                       "name": "msg",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2058,
+                                      "referencedDeclaration": 2337,
                                       "src": "3789:3:2",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_magic_message",
@@ -10215,5 +10215,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-27T14:15:50.464Z"
+  "updatedAt": "2018-05-02T07:48:41.160Z"
 }

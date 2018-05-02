@@ -26,7 +26,7 @@ contract StrategyManager{
       //stratRegistry[_newAddress] = _stratName;
       stratRegistry[_stratName] = _newAddress;
       strategies.push(_stratName);
-      newRegister(_stratName, _newAddress);
+      emit newRegister(_stratName, _newAddress);
     }
 
     function getNumberRegisteredStrategies() public constant returns (uint) {
