@@ -18,7 +18,7 @@ contract MultiLogs {
 
     function MultiLogs(){
         name = "Multi 1.0";
-        explicitState.price =100;
+        explicitState.price =100000000;
     }
     // that backtesting function requires that the strategy explicitState be at the date matching
     // the beginning of the array date
