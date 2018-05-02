@@ -7,16 +7,14 @@ contract MultiLogs {
     struct StrategyExplicitexplicitState {
       uint32 date;
       int8 position;
-      int256 variation;
-      uint32 price;
+      int48 variation;
+      uint48 price;
       int8 category;
     }
 
     StrategyExplicitexplicitState explicitState;
 
     event newRecord(bytes15 indexed name, uint32 indexed date, int256 stratVariation, uint48 stratPrice, int8 position,int8 category);
-
-    event newVariation(bytes15 indexed name, uint32 indexed date, int256 stratVariation, uint48 stratPrice, int8 position,int8 category);
 
     function MultiLogs(){
         name = "Multi 1.0";
@@ -28,17 +26,17 @@ contract MultiLogs {
       uint batchlength = positions.length;
       require(dates.length==batchlength && prices.length==batchlength);
 
-      uint32 strategyInitPrice = explicitState.price;
+      uint48 strategyInitPrice = explicitState.price;
 
-      uint32 strategyPrice = libbatchbacktest(name,strategyInitPrice,dates,prices,positions);
+      uint48 strategyPrice = libbatchbacktest(name,strategyInitPrice,dates,prices,positions);
 
       explicitState.position = positions[batchlength-1];
       explicitState.date = dates[batchlength-1];
       explicitState.price = strategyPrice;
   	}
 
-    function libbatchbacktest(bytes15 name, uint32 strategyInitPrice, uint32[]dates, uint32[] prices, int8[] positions) public returns (uint32) {
-         uint32 strategyPrice = strategyInitPrice;
+    function libbatchbacktest(bytes15 name, uint48 strategyInitPrice, uint32[]dates, uint32[] prices, int8[] positions) public returns (uint48) {
+         uint48 strategyPrice = strategyInitPrice;
 
          for(uint8 i=1; i<dates.length; i++){
 
@@ -83,12 +81,12 @@ Compute the variation of price of index according to the last position EOD
   ----Return :
      lastValue*(1+variation)
   --------------------------------------------------------------------------*/
-  function calValue(int256 variation, uint32 lastValue) internal returns (uint32){
+  function calValue(int256 variation, uint48 lastValue) internal returns (uint48){
      if(variation==0) return lastValue;
      else {
          int256 delta = int256(lastValue) * variation;
          delta/=1e16;
-         return uint32(int256(lastValue) +delta);
+         return uint48(int256(lastValue) +delta);
      }
   }
 
