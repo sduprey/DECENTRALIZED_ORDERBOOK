@@ -16,8 +16,6 @@ contract BacktestFinal {
     StrategyExplicitexplicitState explicitState;
 
     event newRecord(bytes15 indexed name, uint64 indexed date, int256 stratVariation, uint64 stratPrice, uint64 underPrice, int8 position,int8 category);
-    event shortEvent(int256 shortVariation);
-
     function BacktestFinal(){
         name = "Multi 1.0";
         explicitState.price =100000000000000;
@@ -70,7 +68,6 @@ Compute the variation of price of index according to the last position EOD
          variation /=  pxPre;
          if(lastPosit==-1){
              variation *=-1;
-             emit shortEvent(variation);
          }
      }
      return variation;
