@@ -4,6 +4,7 @@ contract BacktestFinal {
 
     bytes15 public name;
 
+
     struct StrategyExplicitexplicitState {
       uint64 date;
       int8 position;
@@ -14,12 +15,12 @@ contract BacktestFinal {
 
     StrategyExplicitexplicitState explicitState;
 
-    event newRecord(bytes15 indexed name, uint64 indexed date, int256 stratVariation, uint64 stratPrice, int8 position,int8 category);
+    event newRecord(bytes15 indexed name, uint64 indexed date, int256 stratVariation, uint64 stratPrice, uint64 underPrice, int8 position,int8 category);
 
 
     function BacktestFinal(){
         name = "Multi 1.0";
-        explicitState.price =100000000;
+        explicitState.price =100000000000000;
     }
     // that backtesting function requires that the strategy explicitState be at the date matching
     // the beginning of the array date
@@ -44,7 +45,7 @@ contract BacktestFinal {
              int256 variation = calVariation(prices[i-1], prices[i], positions[i-1]);
              strategyPrice = calValue(variation, strategyPrice);
 
-             emit newRecord(name,dates[i],variation, strategyPrice, positions[i],0);
+             emit newRecord(name,dates[i],variation, strategyPrice, prices[i], positions[i],0);
          }
          return strategyPrice;
    }
